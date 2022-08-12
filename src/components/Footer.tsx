@@ -15,9 +15,9 @@ const SocialMedia: React.FC<{socialmedia: LinkSocial[]}> = ({socialmedia}) => {
     <div>
       {socialmedia.map((social: LinkSocial) => {
          return (
-            <div key={social.name}>
-              <a href={social.href} target="_blank" rel="noreferrer">{social.name}</a>
-            </div>  
+            <li key={social.name}>
+                 <a href={social.href} target="_blank" rel="noreferrer">{social.name}</a>
+            </li>  
          )
       })}
     </div>
@@ -27,8 +27,10 @@ const SocialMedia: React.FC<{socialmedia: LinkSocial[]}> = ({socialmedia}) => {
 const Footer: React.FC<{}> = () => {
   return (
     <div className='Footer'>
+    <ul className='social-media'>
     <SocialMedia socialmedia={socialmedia} />
-    <div>Coded by <a href="https://www.lunasmithart.com/" target="_blank" rel="noreferrer">Luna Smith</a>, open source on <a href="https://github.com/Lu-Smith/fans-app-react-typescript" target="_blank" rel="noreferrer">GitHub</a></div>
+    </ul>
+    <div className='source'>Coded by <a href="https://www.lunasmithart.com/" target="_blank" rel="noreferrer">Luna Smith</a>, open source on <a href="https://github.com/Lu-Smith/fans-app-react-typescript" target="_blank" rel="noreferrer">GitHub</a></div>
     </div>
   )
 }

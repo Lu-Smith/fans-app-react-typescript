@@ -1,0 +1,31 @@
+.Footer {
+    background-color: black;
+    color: rgb(245, 225, 194);
+    padding: 20px;
+    margin: 0;
+}
+
+.Footer ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.Footer li {
+  line-height: 35px;
+  }
+
+.Footer li a {
+   text-decoration: none;
+   color: rgb(220, 245, 239);
+  }
+
+ .Footer .source a {
+    text-decoration: none;
+    color: rgb(245, 225, 194);
+    font-weight: 600;
+ }
+
+  .Footer a:hover {
+    color: rgb(161, 216, 203);
+   }
