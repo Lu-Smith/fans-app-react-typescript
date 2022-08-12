@@ -4,21 +4,22 @@ import AddMember from './AddMember';
 import "../styles/Main.css";
 
 interface IProps {
+  setMembers: React.Dispatch<React.SetStateAction<Props["members"]>>
   members: Props["members"]
 }
 
-const Main: React.FC<IProps> = ( {members}) => {
+const Main: React.FC<IProps> = ( {members, setMembers}) => {
 
 const renderMembers = (): JSX.Element[] => {
   return members.map(member => {
     return (
       <li>
-        <div>
-          <img src={member.img} alt="${member.name} pet" />
+        <div className='petAvatar'>
+          <img src={member.img} alt="member pet" />
           <h2>{member.petName}</h2>
         </div>
         <div>
-        <div >
+        <div className='moreInfo'>
           <h3>PET</h3>
           <div className='petInfo'>
           <p>age: {member.petAge}</p>
@@ -45,7 +46,7 @@ const renderMembers = (): JSX.Element[] => {
          <ul>
            {renderMembers()}
          </ul>
-         <AddMember />
+         <AddMember members={members} setMembers={setMembers}/>
     </div>
   )
 }

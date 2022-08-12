@@ -38,7 +38,7 @@ const [members, setMembers] = useState<IState["members"]>([
   return (
     <div className="App">
       <NavBar />
-      <Main members={members} />
+      <Main members={members} setMembers={setMembers}/>
       <Footer />
     </div>
   );
