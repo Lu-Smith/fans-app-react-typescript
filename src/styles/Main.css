@@ -1,0 +1,39 @@
+.Main {
+    align-items: center;
+    width: 600px;
+    padding: 16px;
+    background-color: rgb(187, 240, 222);
+    margin: 0 auto;
+}
+
+
+
+.Main ul {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(215, 248, 235);
+}
+
+.Main li {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.Main li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.Main li h3 {
+    border: 2px solid rgb(141, 68, 68);
+}
+
+.Main .petInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
