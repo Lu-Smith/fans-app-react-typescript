@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import NavBar from './components/NavBar';
+import AddMember from './components/AddMember';
 
 export interface IState {
   members: {
@@ -38,7 +39,9 @@ const [members, setMembers] = useState<IState["members"]>([
   return (
     <div className="App">
       <NavBar />
-      <Main members={members} setMembers={setMembers}/>
+      <AddMember members={members} setMembers={setMembers}/>
+      <Main members={members} />
+
       <Footer />
     </div>
   );

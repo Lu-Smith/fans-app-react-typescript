@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import { IState as Props } from '../App';
 import "../styles/AddMember.css";
 
@@ -25,8 +25,9 @@ const AddMember:  React.FC<IProps> = ({setMembers, members}) => {
         }) 
     }
 
-    const handleClick = () => {
-        if(!input.petName || !input.petAge) 
+    const handleClick = (e: React.FormEvent<EventTarget & HTMLButtonElement>) => {
+        e.preventDefault();
+        if(!input.petName && !input.petAge && !input.pet && !input.img) 
         return
          setMembers([
             ...members,
@@ -40,6 +41,7 @@ const AddMember:  React.FC<IProps> = ({setMembers, members}) => {
             }
           ]);
 
+          
         setInput({
             ownerName: "",
             img: "",
@@ -48,6 +50,7 @@ const AddMember:  React.FC<IProps> = ({setMembers, members}) => {
             petAge: "",
             petName:"",
         })
+
     }
 
   return (
