@@ -13,7 +13,7 @@ const Main: React.FC<IProps> = ( {members, setMembers}) => {
 const renderMembers = (): JSX.Element[] => {
   return members.map(member => {
     return (
-      <li>
+      <li key={member.petName}>
         <div className='petAvatar'>
           <img src={member.img} alt="member pet" />
           <h2>{member.petName}</h2>

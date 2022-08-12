@@ -13,7 +13,6 @@ const AddMember:  React.FC<IProps> = ({setMembers, members}) => {
         petName: "",
         ownerName: "",
         petAge: "",
-        ownerAge: "",
         note: "",
         img: "",
         pet: ""
@@ -27,6 +26,28 @@ const AddMember:  React.FC<IProps> = ({setMembers, members}) => {
     }
 
     const handleClick = () => {
+        if(!input.petName || !input.petAge) 
+        return
+         setMembers([
+            ...members,
+            {
+                ownerName: input.ownerName,
+                img: input.img,
+                note: input.note,
+                pet: input.pet,
+                petAge: parseInt(input.petAge),
+                petName: input.petName,
+            }
+          ]);
+
+        setInput({
+            ownerName: "",
+            img: "",
+            note: "",
+            pet: "",
+            petAge: "",
+            petName:"",
+        })
     }
 
   return (
