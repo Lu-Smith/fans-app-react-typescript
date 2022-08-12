@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import "../styles/NavBar.css";
+import { IoPawSharp } from 'react-icons/io5';
 
-const NavBar = () => {
+const NavBar: React.FC<{}> = () => {
   return (
-    <div>NavBar</div>
+    <nav className='NavBar'>
+      <div className='logo-container'>
+        <span><IoPawSharp className='logo-img'/>PawHub</span>
+      </div>
+    </nav>
   )
 }
 
