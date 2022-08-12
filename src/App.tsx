@@ -39,9 +39,11 @@ const [members, setMembers] = useState<IState["members"]>([
   return (
     <div className="App">
       <NavBar />
-      <AddMember members={members} setMembers={setMembers}/>
+      <h1> PawHub is the place that rewards real Pets lovers</h1>
+      <div className='main-space'>
+      <AddMember members={members} setMembers={setMembers} />
       <Main members={members} />
-
+      </div>
       <Footer />
     </div>
   );

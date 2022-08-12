@@ -28,3 +28,12 @@
     justify-content: space-evenly;
     margin-right: 20px;
 }
+
+.NavBar .menu-link a {
+    text-decoration: none;
+    color: rgb(34, 33, 33);
+}
+
+.NavBar .menu-link a:hover {
+    color: rgb(75, 73, 73);
+}

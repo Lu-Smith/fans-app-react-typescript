@@ -1,5 +1,8 @@
 .AddMember {
     background-color: rgb(84, 209, 167);
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
 }
 
 .AddMember form {

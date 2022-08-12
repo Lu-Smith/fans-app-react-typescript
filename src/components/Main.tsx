@@ -37,7 +37,7 @@ const renderMembers = (): JSX.Element[] => {
 
   return (
     <div className='Main'>
-         <h1> PawHub is the place that rewards real Pets lovers</h1>
+         <h2>PawHub members</h2>
          <ul>
            {renderMembers()}
          </ul>
