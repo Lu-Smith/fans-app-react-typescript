@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import { IState as Props } from '../App';
+import "../styles/AddMember.css";
 
 interface IProps {
     setMembers: React.Dispatch<React.SetStateAction<Props["members"]>>
@@ -22,14 +23,14 @@ const AddMember:  React.FC<IProps> = ({setMembers, members}) => {
         setInput({
             ...input,
             [e.target.name]: e.target.value
-        })
+        }) 
     }
 
     const handleClick = () => {
     }
 
   return (
-    <div>
+    <div className='AddMember'>
         <form>
             <input 
               type="text"
@@ -51,6 +52,13 @@ const AddMember:  React.FC<IProps> = ({setMembers, members}) => {
               onChange={handleChange}
               name="img"
               value={input.img}
+            />
+             <input 
+              type="text"
+              placeholder="Your pet type"
+              onChange={handleChange}
+              name="pet"
+              value={input.pet}
             />
             <input 
               type="text"
