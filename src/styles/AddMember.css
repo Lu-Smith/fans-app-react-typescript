@@ -5,14 +5,12 @@
     width: 40%;
     margin: 30px 10px 30px 10px;
     border-radius: 15px;
-   
 }
 
 .AddMember form {
     padding: 20px;
     display: flex;
     flex-direction: column;
-
 }
 
 .AddMember form input {
@@ -54,3 +52,9 @@
     position: relative;
     transform: translateY(5px);
 }
+
+@media screen and (max-width: 768px) {
+    .AddMember {
+        width: 60%;
+    }
+  }

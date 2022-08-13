@@ -35,6 +35,10 @@ Main ul {
     padding: 20px;
 }
 
+.Main .petAvatar h2 {
+    color: #e40475;
+}
+
 .Main li img {
     width: 90px;
     height: 90px;
@@ -65,6 +69,10 @@ Main ul {
     justify-content: space-around;
 }
 
+.Main .petDescription .petInfo span {
+    font-style: italic;
+}
+
 .Main .petDescription .ownerInfo {
     padding: 10px;
 }
@@ -73,3 +81,17 @@ Main ul {
     margin-bottom: 10px;
     font-style: italic;
 }
+
+@media screen and (max-width: 1000px) {
+    .Main li {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .Main ul {
+        display: flex;
+        flex-direction: column;
+    }
+  }

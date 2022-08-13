@@ -19,8 +19,8 @@ const renderMembers = (): JSX.Element[] => {
         <div className='petDescription'>
           <h3>PET</h3>
            <div className='petInfo'>
-             <p>age: {member.petAge}</p>
-             <p>type: {member.pet}</p>
+             <p>age: <span>{member.petAge}</span></p>
+             <p>type: <span>{member.pet}</span></p>
            </div>
           <h3>OWNER</h3>
           <div className='ownerInfo'>

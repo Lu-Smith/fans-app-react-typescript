@@ -22,7 +22,7 @@ const [members, setMembers] = useState<IState["members"]>([
     ownerName: "Alice Chow",
     img: "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     note: "“No matter how you're feeling, a little dog gonna love you.”",
-    pet: "Cat",
+    pet: "cat",
     petAge: 4,
     petName: "Donald"
   },
@@ -30,7 +30,7 @@ const [members, setMembers] = useState<IState["members"]>([
     ownerName: "Harry S Truman",
     img: "https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     note: "“You want a friend in Washington? Get a dog.”",
-    pet: "Dog",
+    pet: "dog",
     petAge: 6,
     petName: "Spark",
   },

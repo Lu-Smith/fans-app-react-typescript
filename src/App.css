@@ -5,10 +5,23 @@
 
 .App .main-space {
   display: flex;
-  width: 60%;
+  flex-direction: row;
+  align-items: center;
+  width: 1200px;
   margin: 0 auto;
 }
 
-.App .main-space {
-  display: flex;
+
+
+@media screen and (max-width: 1300px) {
+  .App .main-space {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App .main-space {
+      display: flex;
+      flex-direction: column;
+  }
 }
