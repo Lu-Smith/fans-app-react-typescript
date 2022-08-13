@@ -2,29 +2,33 @@
     align-items: center;
     width: 60%;
     padding: 16px;
-    background-color: rgb(187, 240, 222);
+    background-color: #0e0220;
     margin: 0 auto;
+    margin: 30px 10px 30px 10px;
+    border-radius: 15px;
 }
 
+.Main h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 10px 0;
+    color: #48e0e4;
+}
 
-
-.Main ul {
+Main ul {
     list-style: none;
     padding: 0;
-    background-color: rgb(215, 248, 235);
     margin-bottom: 20px;
 }
 
 .Main li {
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
+    border: 5px solid #e40475;
+    border-radius: 15px;
     padding: 20px;
     margin-bottom: 5px;
-}
-
-.Main .moreInfo {
-    width: 400px;
+    background-color: #d7fbf6;
 }
 
 .Main .petAvatar{
@@ -32,28 +36,40 @@
 }
 
 .Main li img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 100%;
     margin-right: 8px;
+    border: 2px solid #e40475;
 }
 
-.Main li h3 {
-    border: 2px solid rgb(141, 68, 68);
+.Main .petDescription {
+    background-color: #0e0220;
+    color: #d7fbf6;
+    border-radius: 15px;
+    padding: 20px;
     width: 100%;
 }
 
-.Main .petInfo {
+.Main .petDescription h3 {
+    background-color: #48e0e4;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.Main .petDescription .petInfo {
     display: flex;
+    padding: 10px;
     justify-content: space-around;
-    align-items: center
 }
 
-.Main .ownerInfo {
-    color: rgb(11, 56, 25);
-    max-width: 400px;
+.Main .petDescription .ownerInfo {
+    padding: 10px;
 }
 
-.Main .ownerInfo h3 {
-    border: 2px solid rgb(11, 56, 25);
+.Main .petDescription .ownerInfo .ownerName {
+    margin-bottom: 10px;
+    font-style: italic;
 }

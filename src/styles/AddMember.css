@@ -1,14 +1,18 @@
 .AddMember {
-    background-color: rgb(84, 209, 167);
+    background-color: #48e0e4;
     text-align: center;
     margin: 0 auto;
     width: 40%;
+    margin: 30px 10px 30px 10px;
+    border-radius: 15px;
+   
 }
 
 .AddMember form {
     padding: 20px;
     display: flex;
     flex-direction: column;
+
 }
 
 .AddMember form input {
@@ -16,6 +20,8 @@
     margin-bottom: 5px;
     font-size:  18px;
     line-height: 25px;
+    border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .AddMember form textarea {
@@ -24,6 +30,8 @@
     font-size:  16px;
     line-height: 20px;
     height: 200px;
+    border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .AddMember form button {
@@ -31,5 +39,18 @@
     margin-bottom: 5px;
     font-size:  16px;
     line-height: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
+    background-color: #e40475;
+    box-shadow: 0 5px 3px #d7fbf6;
+    color: #d7fbf6;
+    border: none;
+    transition: all 200ms ease-in-out;
+}
+
+.AddMember form button:hover {
+    background-color: #e40475;
+    box-shadow: none;
+    color: #d7fbf6;
+    position: relative;
+    transform: translateY(5px);
 }

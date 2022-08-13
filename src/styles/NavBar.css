@@ -19,6 +19,7 @@
     position: relative;
     top: -10px;
     color: #e40475;
+    font-family: 'Rubik Burned', cursive;
     
 }
 
@@ -63,6 +64,7 @@
 
 .NavHeader .motto h1 span {
     color: #e40475;
+    font-family: 'Rubik Burned', cursive;
 }
 
 .NavHeader .motto button {
@@ -74,6 +76,7 @@
     box-shadow: 0 5px 3px #9e356a;
     color: #d7fbf6;
     border: none;
+    transition: all 200ms ease-in-out;
 }
 
 .NavHeader .motto button:hover {
