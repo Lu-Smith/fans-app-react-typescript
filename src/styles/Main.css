@@ -89,9 +89,9 @@ Main ul {
     }
   }
 
-  @media screen and (max-width: 768px) {
-    .Main ul {
-        display: flex;
-        flex-direction: column;
+  @media screen and (max-width: 480px) {
+    .Main {
+        width: 90%;
+        margin: 10px 0;
     }
   }

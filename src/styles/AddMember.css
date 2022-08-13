@@ -58,3 +58,10 @@
         width: 60%;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    .AddMember {
+        margin: 20px 0;
+        width: 90%;
+    }
+  }
