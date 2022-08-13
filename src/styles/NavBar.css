@@ -1,8 +1,8 @@
 .NavBar {
     width: 100%;
-    height: 60px;
-    background-color: #dad5d5;
-    border-bottom: 1px solid #555;
+    height: 100px;
+    background-color: #0e0220;
+    border-bottom: 1px solid rgb(8, 8, 8);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,11 +15,18 @@
 .NavBar .logo-container span {
     font-weight: 500;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 40px;
+    position: relative;
+    top: -10px;
+    color: #e40475;
+    
 }
 
 .NavBar .logo-container span .logo-img {
    margin-right: 5px;
+   font-size: 60px;
+   position: relative;
+   top:10px;
 }
 
 .NavBar .menu-container {
@@ -31,9 +38,55 @@
 
 .NavBar .menu-link a {
     text-decoration: none;
-    color: rgb(34, 33, 33);
+    color: #d7fbf6;
+    transition: 200ms all ease-in-out;
 }
 
 .NavBar .menu-link a:hover {
-    color: rgb(75, 73, 73);
+    color: #e40475;
+    border-bottom: 1px solid #e40475;
+    position: relative;
+    top: -5px;
+}
+
+.NavHeader {
+    background-color: #0e0220;
+    color: #d7fbf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavHeader .motto {
+    width: 50%;
+}
+
+.NavHeader .motto h1 span {
+    color: #e40475;
+}
+
+.NavHeader .motto button {
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: #e40475;
+    box-shadow: 0 5px 3px #9e356a;
+    color: #d7fbf6;
+    border: none;
+}
+
+.NavHeader .motto button:hover {
+    background-color: #e40475;
+    box-shadow: none;
+    color: #d7fbf6;
+    position: relative;
+    transform: translateY(5px);
+}
+
+.NavHeader img {
+    width: 300px;
+    margin: 40px;
+    border: 4px solid #e40475;
+    border-radius: 20px;
 }

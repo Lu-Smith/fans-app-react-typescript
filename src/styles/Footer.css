@@ -1,6 +1,6 @@
 .Footer {
-    background-color: black;
-    color: rgb(245, 225, 194);
+    background-color: #0e0220;
+    color: #d7fbf6;
     padding: 20px;
     margin: 0;
 }
@@ -17,15 +17,17 @@
 
 .Footer li a {
    text-decoration: none;
-   color: rgb(220, 245, 239);
+   color: #e40475;
+   transition: 200ms all ease-in-out;
   }
 
  .Footer .source a {
     text-decoration: none;
-    color: rgb(245, 225, 194);
+    color: #d7fbf6;
     font-weight: 600;
+    transition: 200ms all ease-in-out;
  }
 
   .Footer a:hover {
-    color: rgb(161, 216, 203);
+    color: #d35594;
    }
